@@ -34,6 +34,6 @@ Software Developer
 ### My GitHub Stats
 
 <p float="left">
-    <a href="http://www.github.com/DarkyEG"><img src="https://github-readme-stats-darkyeg.vercel.app/api?username=DarkyEG&show_icons=true&hide=&count_private=true&theme=radical&hide_border=true&show_icons=true" alt="DarkyEG's GitHub stats" /></a>
+    <a href="http://www.github.com/DarkyEG"><img src="https://github-readme-stats-sigma-nine-97.vercel.app/api?username=DarkyEG&show_icons=true&hide=&count_private=true&theme=radical&hide_border=true&show_icons=true" alt="DarkyEG's GitHub stats" /></a>
     <a href="http://www.github.com/DarkyEG"><img src="https://streak-stats.demolab.com/?user=DarkyEG&theme=radical&hide_border=true&exclude_days=Fri%2CSat" /></a>
 </p>
