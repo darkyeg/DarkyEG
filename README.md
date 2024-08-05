@@ -4,7 +4,7 @@ Software Developer
 ------------------
 
 * ✉️  You can contact me at [usf.kh.kh@gmail.com](mailto:usf.kh.kh@gmail.com)
-* 🚀  I'm currently working on [rucord](http://github.com/coders-collab-org/rucord)
+* 🚀  I'm currently working on [restify](http://github.com/coders-collab-org/restify)
 * 🤝  I'm open to collaborating on interesting projects
 
 ### Skills
