@@ -2,11 +2,7 @@
 
 <div align="center">
   <h1>👋 Hello World! I'm Youssef Khalil</h1>
-  <h3>🚀 Full Stack Developer | Creating Amazing Experiences</h3>
-</div>
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="600">
+  <h3>🚀 Software Developer | Creating Amazing Experiences</h3>
 </div>
 
 <div align="center">
@@ -114,10 +110,4 @@ const youssef = {
 
 <div align="center">
   <img src="https://mayu.due.moe/get/@darkyeg-github?theme=rule34&padding=6">
-</div>
-
----
-
-<div align="center">
-  <p><em>Thanks for visiting! May your code be as clean as your anime collection 🎌</em></p>
 </div>
