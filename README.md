@@ -1,113 +1,91 @@
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/banner-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/banner-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img alt="Darky (Youssef Khalil): I fix the small things that annoy me" src="assets/banner-dark.svg" width="100%">
+</picture>
 
+<a href="https://www.darky.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/chip-site-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/chip-site-light.svg"><img alt="darky.dev" src="assets/chip-site-dark.svg" height="64"></picture></a><a href="mailto:me@darky.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/chip-mail-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/chip-mail-light.svg"><img alt="me@darky.dev" src="assets/chip-mail-dark.svg" height="64"></picture></a>
 
-<div align="center">
-  <h1>👋 Hello World! I'm Youssef Khalil</h1>
-  <h3>🚀 Software Developer | Creating Amazing Experiences</h3>
-</div>
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/chapter-projects-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/chapter-projects-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/chapter-projects-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/chapter-projects-light.svg">
+  <img alt="Part 1: Projects" src="assets/chapter-projects-dark.svg" width="100%">
+</picture>
 
-<div align="center">
-  <h3>🕌 "إنَّ اللهَ تعالى يُحِبُّ إذا عمِلَ أحدُكمْ عملًا أنْ يُتقِنَهُ" 🕌</h3>
-  <p><em>"Allah loves when one of you does a job, he does it perfectly" - Prophet Muhammad ﷺ</em></p>
-</div>
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/upcoming-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/upcoming-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/upcoming-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/upcoming-light.svg">
+  <img alt="arkstone, not public yet. A family of tools for building ambitious software, starting with TypeScript." src="assets/upcoming-dark.svg" width="100%">
+</picture>
 
----
+<a href="https://github.com/darkyeg/spinup"><picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/project-spinup-narrow-dark.svg"><source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/project-spinup-narrow-light.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/project-spinup-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-spinup-light.svg"><img alt="spinup. One command sets up every machine I code on, and keeps them all the same. Go, 4 stars." src="assets/project-spinup-dark.svg" width="49.9%"></picture></a><a href="https://github.com/darkyeg/echobridge"><picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/project-echobridge-narrow-dark.svg"><source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/project-echobridge-narrow-light.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/project-echobridge-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-echobridge-light.svg"><img alt="echobridge. Stops your headphones leaking into your mic on calls. Windows, Rust. Rust, 5 stars." src="assets/project-echobridge-dark.svg" width="49.9%"></picture></a><a href="https://github.com/kozan-rs/kozan"><picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/project-kozan-narrow-dark.svg"><source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/project-kozan-narrow-light.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/project-kozan-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-kozan-light.svg"><img alt="kozan. A Rust UI platform: a browser-level engine for frameworks to build on. Rust, 2 stars." src="assets/project-kozan-dark.svg" width="49.9%"></picture></a><a href="https://github.com/darkyeg/dotfiles"><picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/project-dotfiles-narrow-dark.svg"><source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/project-dotfiles-narrow-light.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/project-dotfiles-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-dotfiles-light.svg"><img alt="dotfiles. My NixOS setup. Reproducible down to the last config file. Nix, 2 stars." src="assets/project-dotfiles-dark.svg" width="49.9%"></picture></a>
 
-## 🌟 About Me
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/opensource-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/opensource-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/opensource-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/opensource-light.svg">
+  <img alt="11 pull requests merged into other people's open source projects: mdn/content (1), serenity-rs/serenity (2), serenity-rs/poise (1), Etherll/laqta (2), coders-collab/coders-challenges (1), coders-collab/rucord (1), coders-collab/rjimp (3)." src="assets/opensource-dark.svg" width="100%">
+</picture>
 
-```typescript
-const youssef = {
-  name: "Youssef Khalil",
-  role: "Full Stack Developer",
-  location: "🇪🇬 Egypt",
-  faith: "🕌 Muslim",
-  interests: ["Web Development", "Anime", "Gaming", "Open Source", "System Design"],
-  currentlyWorkingOn: "restify",
-  lookingFor: "Interesting projects to collaborate on",
-  funFact: "I believe in creating code that's as beautiful as anime art 🎨",
-  languages: ["TypeScript", "JavaScript", "C#", "Rust", "Python"],
-  frameworks: ["React", "Next.js", "Vue.js", ".NET", "Express.js"],
-  databases: ["PostgreSQL", "Supabase", "MongoDB", "SQL Server"]
-}
-```
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/chapter-numbers-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/chapter-numbers-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/chapter-numbers-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/chapter-numbers-light.svg">
+  <img alt="Part 2: Numbers" src="assets/chapter-numbers-dark.svg" width="100%">
+</picture>
 
----
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/numbers-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/numbers-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/numbers-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/numbers-light.svg">
+  <img alt="58-day contribution streak, longest 58 days. 16,205 contributions since 2018; 296 active days in the last 12 months." src="assets/numbers-dark.svg" width="100%">
+</picture>
 
-## ⚡ Tech Stack
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/activity-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/activity-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
+  <img alt="11,472 contributions in the last 12 months. Busiest day: 477 on Nov 1, 2026. Heatmap with weekday, monthly and yearly totals." src="assets/activity-dark.svg" width="100%">
+</picture>
 
-### 🎨 Frontend
-![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&style=for-the-badge)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white&style=for-the-badge)
-![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?logo=vue.js&logoColor=white&style=for-the-badge)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/stand-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/stand-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stand-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/stand-light.svg">
+  <img alt="Stand stats, ranked E to A from my numbers: Power A, Speed B, Range A, Durability B, Precision A, Potential A." src="assets/stand-dark.svg" width="100%">
+</picture>
 
-### 🎯 Styling & Build Tools
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=for-the-badge)
-![Sass](https://img.shields.io/badge/-Sass-CC6699?logo=sass&logoColor=white&style=for-the-badge)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
-![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge)
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/chapter-time-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/chapter-time-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/chapter-time-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/chapter-time-light.svg">
+  <img alt="Part 3: Time" src="assets/chapter-time-dark.svg" width="100%">
+</picture>
 
-### 🔧 Backend & Database
-![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=for-the-badge)
-![Express.js](https://img.shields.io/badge/-Express.js-000000?logo=express&logoColor=white&style=for-the-badge)
-![NestJS](https://img.shields.io/badge/-NestJS-E0234E?logo=nestjs&logoColor=white&style=for-the-badge)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white&style=for-the-badge)
-![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?logo=supabase&logoColor=white&style=for-the-badge)
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/waka-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/waka-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/waka-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/waka-light.svg">
+  <img alt="3,755 hours of code tracked by WakaTime. Top languages: TypeScript, Go, Rust." src="assets/waka-dark.svg" width="100%">
+</picture>
 
-### ⚙️ Languages & Tools
-![C#](https://img.shields.io/badge/-C%23-239120?logo=c-sharp&logoColor=white&style=for-the-badge)
-![.NET](https://img.shields.io/badge/-.NET-512BD4?logo=.net&logoColor=white&style=for-the-badge)
-![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white&style=for-the-badge)
-![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white&style=for-the-badge)
-![Webpack](https://img.shields.io/badge/-Webpack-8DD6F9?logo=webpack&logoColor=black&style=for-the-badge)
-![Babel](https://img.shields.io/badge/-Babel-F9DC3E?logo=babel&logoColor=black&style=for-the-badge)
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-streak-stats-eight.vercel.app/api?user=DarkyEG&show_icons=true&hide=&count_private=true&theme=radical&hide_border=true&show_icons=true&layout=compact" alt="DarkyEG's GitHub stats" width="51%" />
-  <img src="https://github-readme-stats-sigma-nine-97.vercel.app/api?username=DarkyEG&show_icons=true&hide=&count_private=true&theme=radical&hide_border=true&show_icons=true&layout=compact" alt="DarkyEG's GitHub stats" width="48%" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DarkyEG&layout=compact&theme=radical&hide_border=true&exclude_days=Fri%2CSat" alt="DarkyEG's GitHub top languages" width="39%" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DarkyEG&theme=rogue&hide_border=true&exclude_days=Fri%2CSat" alt="DarkyEG's GitHub activity graph" width="60%" />
-</div>
-
----
-
-## ⏰ WakaTime Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=8f9fbc0a-97f0-4c26-9794-c5b2c7cf0555&theme=radical&hide_border=true&layout=compact&langs_count=7" alt="WakaTime Stats" width="100%" />
-</div>
-
----
-
-## 🎯 Current Focus
-
-- 🔥 **Currently working on:** [restify](http://github.com/coders-collab-org/restify)
-- 🤝 **Open to collaboration** on interesting projects
-- 🌱 **Learning:** Advanced .NET patterns and microservices architecture
-- 💡 **Interested in:** Performance optimization, System Architecture, and Scalable Solutions
-
----
-
-## 📫 Get In Touch
-
-<div align="center">
-  <a href="mailto:me@darky.dev">
-    <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <a href="https://github.com/DarkyEG">
-    <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
-</div>
-
----
-
-<div align="center">
-  <img src="https://mayu.due.moe/get/@darkyeg-github?theme=rule34&padding=6">
-</div>
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/footer-narrow-dark.svg">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/footer-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg">
+  <img alt="" src="assets/footer-dark.svg" width="100%">
+</picture>

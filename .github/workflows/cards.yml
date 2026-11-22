@@ -1,0 +1,42 @@
+name: Refresh profile cards
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cards
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # A failed run leaves the last good cards untouched and the job red, so
+      # GitHub emails you instead of the profile silently showing broken images.
+      - run: node scripts/build-cards.mjs
+        env:
+          # Classic token with the read:user scope so contribution totals match your
+          # profile. Without the secret it falls back to public-only data.
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          # Optional WakaTime OAuth token (scripts/tools/wakatime-authorize.mjs). Without
+          # it the public share endpoint is used.
+          WAKATIME_TOKEN: ${{ secrets.WAKATIME_TOKEN }}
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets README.md
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh profile cards"
+          git pull --rebase
+          git push
