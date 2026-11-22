@@ -47,7 +47,7 @@
   <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/numbers-narrow-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/numbers-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/numbers-light.svg">
-  <img alt="58-day contribution streak, longest 58 days. 16,205 contributions since 2018; 296 active days in the last 12 months." src="assets/numbers-dark.svg" width="100%">
+  <img alt="58-day contribution streak, longest 58 days. 16,206 contributions since 2018; 296 active days in the last 12 months." src="assets/numbers-dark.svg" width="100%">
 </picture>
 
 <picture>
@@ -55,7 +55,7 @@
   <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/activity-narrow-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img alt="11,472 contributions in the last 12 months. Busiest day: 477 on Nov 1, 2026. Heatmap with weekday, monthly and yearly totals." src="assets/activity-dark.svg" width="100%">
+  <img alt="11,473 contributions in the last 12 months. Busiest day: 477 on Nov 1, 2026. Heatmap with weekday, monthly and yearly totals." src="assets/activity-dark.svg" width="100%">
 </picture>
 
 <picture>
