@@ -3,11 +3,25 @@ import { esc, extruded, glyphs, shell, speedLines, starPoints, tag, text } from 
 const TAGLINE = "I fix the small things that annoy me.";
 const FALLBACK_LANGS = ["Rust", "Go", "TypeScript", "Nix"];
 
+/** The menacing kana in darky.dev's look: Reggae One in pink with a pale rim, on a doubled dark shadow. */
+const MENACE = { fill: "#c23f9f", rim: "#f7d8ef", shadow: "#170c52" };
+
+/** One kana at (x, y), its rim and shadow sized in ems as on the site (text-stroke .07em, shadows .06em and .09em). */
+function menace(ch, { x, y, size, anchor = "start" }) {
+  const rim = 70; // .07em in the font's 1000 units
+  const at = (dx, fill, stroke) =>
+    glyphs("reggae", ch, { x: x + dx * size, y: y + dx * size, size, anchor, fill, extra: `stroke="${stroke}" stroke-width="${rim}" paint-order="stroke"` }).svg;
+  return at(0.09, MENACE.shadow, MENACE.shadow) + at(0.06, MENACE.shadow, MENACE.shadow) + at(0, MENACE.fill, MENACE.rim);
+}
+
+/** The ring turns slowly, as the one round the star on darky.dev does. */
+const SPIN_CSS = `.spin{transform-box:fill-box;transform-origin:center;animation:spin 60s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}`;
+
 /** A gold star with a hard purple extrusion, ringed by halftone and impact lines. */
 function emblem(t, { x, y, r }) {
   return `
   <circle cx="${x}" cy="${y}" r="${r * 1.45}" fill="url(#tone)"/>
-  <circle cx="${x}" cy="${y}" r="${r * 1.22}" fill="none" stroke="${t.fg}" stroke-width="2.5" stroke-dasharray="3 9" stroke-linecap="round"/>
+  <circle class="spin" cx="${x}" cy="${y}" r="${r * 1.22}" fill="none" stroke="${t.fg}" stroke-width="2.5" stroke-dasharray="3 9" stroke-linecap="round"/>
   <polygon points="${starPoints(x + r * 0.09, y + r * 0.09, r)}" fill="${t.accent}" stroke="${t.ink}" stroke-width="5" stroke-linejoin="round"/>
   <polygon points="${starPoints(x, y, r)}" fill="${t.gold}" stroke="${t.ink}" stroke-width="5" stroke-linejoin="round"/>
   <polygon points="${starPoints(x, y, r * 0.5, 0.5)}" fill="none" stroke="${t.ink}" stroke-width="2.5" stroke-linejoin="round" opacity=".55"/>`;
@@ -54,9 +68,8 @@ function wide(t, langs) {
   const W = 1000, H = 366;
   const E = { x: 790, y: 178, r: 104 };
   const name = title(t, { x: 46, y: 206, size: 132, maxWidth: 590, depth: 8, stroke: 5 });
-  const sfx = [..."ゴゴゴゴ"]
-    .map((ch, i) => glyphs("dela", ch, { x: 934, y: 60 + i * 46, size: 36, fill: t.gold, extra: `stroke="${t.ink}" stroke-width="2" paint-order="stroke"` }).svg)
-    .join("");
+  // A column, as on the site: one kana under the next, leaning a little.
+  const sfx = [..."ゴゴゴゴ"].map((ch, i) => menace(ch, { x: 931, y: 74 + i * 50, size: 50 })).join("");
 
   const body = `
   <defs>${halo(t)}</defs>
@@ -69,15 +82,15 @@ function wide(t, langs) {
   ${caption(t, { x: 50, y: 244, h: 46, size: 28, textW: Math.round(TAGLINE.length * 11.4), pad: 22 })}
   ${tagRow(t, langs, { x: 50, y: 308, maxWidth: 600, size: 16, height: 30 })}
   <rect x="0" y="${H - 16}" width="${W}" height="16" fill="url(#check)"/>
-  <g class="tremble">${sfx}</g>`;
-  return shell({ w: W, h: H, t, title: "Darky (Youssef Khalil): I fix the small things that annoy me", body });
+  <g transform="rotate(3 956 150)"><g class="tremble">${sfx}</g></g>`;
+  return shell({ w: W, h: H, t, title: "Darky (Youssef Khalil): I fix the small things that annoy me", body, css: SPIN_CSS });
 }
 
 function narrow(t, langs) {
   const W = 370, H = 432;
   const E = { x: 292, y: 96, r: 50 };
   const name = title(t, { x: 22, y: 224, size: 100, maxWidth: 322, depth: 6, stroke: 4 });
-  const sfx = glyphs("dela", "ゴゴゴゴ", { x: W - 22, y: 396, size: 26, fill: t.gold, anchor: "end", extra: `stroke="${t.ink}" stroke-width="1.6" paint-order="stroke"` });
+  const sfx = menace("ゴゴゴゴ", { x: W - 28, y: 398, size: 32, anchor: "end" });
 
   const body = `
   <defs>${halo(t)}</defs>
@@ -89,8 +102,8 @@ function narrow(t, langs) {
   ${caption(t, { x: 24, y: 262, h: 40, size: 15.5, textW: Math.round(TAGLINE.length * 6.3), pad: 14 })}
   ${tagRow(t, langs, { x: 24, y: 322, maxWidth: 322, size: 13, height: 26 })}
   <rect x="0" y="${H - 16}" width="${W}" height="16" fill="url(#check)"/>
-  <g class="tremble">${sfx.svg}</g>`;
-  return shell({ w: W, h: H, t, title: "Darky (Youssef Khalil): I fix the small things that annoy me", body });
+  <g class="tremble">${sfx}</g>`;
+  return shell({ w: W, h: H, t, title: "Darky (Youssef Khalil): I fix the small things that annoy me", body, css: SPIN_CSS });
 }
 
 export function banner(t, { waka }, mode) {

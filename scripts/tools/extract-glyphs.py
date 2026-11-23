@@ -1,6 +1,6 @@
 """One-off design tool: outlines the few glyphs the cards need into scripts/brand/glyphs.json.
 
-The font is SIL OFL licensed (Dela Gothic One), which permits embedding outlines. Run: uv run --with fonttools python -I scripts/tools/extract-glyphs.py <fonts-dir>
+The fonts are SIL OFL licensed (Dela Gothic One, Reggae One), which permits embedding outlines. Run: uv run --with fonttools python -I scripts/tools/extract-glyphs.py <fonts-dir>
 The build itself only reads the JSON, so the Action needs no font tooling.
 """
 import json
@@ -19,6 +19,8 @@ SETS = {
         "DelaGothicOne-Regular.ttf",
         string.ascii_letters + string.digits + " -.,%:+·/&'!?→" + "ゴドッオラムダー" + "第一二三四部章時星止",
     ),
+    # The menacing kana, in the face darky.dev uses for them (Reggae One, also SIL OFL).
+    "reggae": ("ReggaeOne-Regular.ttf", "ゴ"),
 }
 
 result = {}
