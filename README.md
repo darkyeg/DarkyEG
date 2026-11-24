@@ -47,7 +47,7 @@
   <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/numbers-narrow-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/numbers-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/numbers-light.svg">
-  <img alt="59-day contribution streak, longest 59 days. 16,260 contributions since 2018; 296 active days in the last 12 months." src="assets/numbers-dark.svg" width="100%">
+  <img alt="59-day contribution streak, longest 59 days. 16,260 contributions since 2018; 295 active days in the last 12 months." src="assets/numbers-dark.svg" width="100%">
 </picture>
 
 <picture>
@@ -55,7 +55,7 @@
   <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/activity-narrow-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img alt="11,522 contributions in the last 12 months. Busiest day: 477 on Nov 1, 2026. Heatmap with weekday, monthly and yearly totals." src="assets/activity-dark.svg" width="100%">
+  <img alt="11,511 contributions in the last 12 months. Busiest day: 477 on Nov 1, 2026. Heatmap with weekday, monthly and yearly totals." src="assets/activity-dark.svg" width="100%">
 </picture>
 
 <picture>
@@ -79,7 +79,7 @@
   <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/waka-narrow-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/waka-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/waka-light.svg">
-  <img alt="3,774 hours of code tracked by WakaTime. Top languages: TypeScript, Go, Rust." src="assets/waka-dark.svg" width="100%">
+  <img alt="3,783 hours of code tracked by WakaTime. Top languages: TypeScript, Go, Rust." src="assets/waka-dark.svg" width="100%">
 </picture>
 
 <picture>
